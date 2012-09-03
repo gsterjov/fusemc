@@ -1,0 +1,50 @@
+<Project name="Fuse" fileversion="2.0" language="C#" clr-version="Net_2_0" ctype="DotNetProject">
+  <Configurations active="Debug">
+    <Configuration name="Debug" ctype="DotNetProjectConfiguration">
+      <Output directory="../build/debug" assemblyKeyFile="." assembly="Fuse" />
+      <Build debugmode="True" target="Exe" />
+      <Execution runwithwarnings="True" consolepause="True" runtime="MsNet" clr-version="Net_2_0" />
+      <CodeGeneration compiler="Mcs" warninglevel="4" optimize="True" unsafecodeallowed="False" generateoverflowchecks="True" mainclass="Fuse.FuseApp" generatexmldocumentation="False" win32Icon="." ctype="CSharpCompilerParameters" />
+    </Configuration>
+    <Configuration name="Release" ctype="DotNetProjectConfiguration">
+      <Output directory="../build/release" assemblyKeyFile="." assembly="Fuse" />
+      <Build debugmode="False" target="Exe" />
+      <Execution runwithwarnings="True" consolepause="True" runtime="MsNet" clr-version="Net_2_0" />
+      <CodeGeneration compiler="Mcs" warninglevel="4" optimize="True" unsafecodeallowed="False" generateoverflowchecks="True" mainclass="Fuse.FuseApp" generatexmldocumentation="False" win32Icon="." ctype="CSharpCompilerParameters" />
+    </Configuration>
+  </Configurations>
+  <Contents>
+    <File name="Extension.cs" subtype="Code" buildaction="Compile" />
+    <File name="MediaEngine.cs" subtype="Code" buildaction="Compile" />
+    <File name="Plugin.cs" subtype="Code" buildaction="Compile" />
+    <File name="../configure.ac" subtype="Code" buildaction="Nothing" />
+    <File name="Makefile.am" subtype="Code" buildaction="Nothing" />
+    <File name="../Makefile.am" subtype="Code" buildaction="Nothing" />
+    <File name="fuse.in" subtype="Code" buildaction="Nothing" />
+    <File name="../autogen.sh" subtype="Code" buildaction="Nothing" />
+    <File name="../Makefile.include" subtype="Code" buildaction="Nothing" />
+    <File name="CommandLineParser.cs" subtype="Code" buildaction="Compile" />
+    <File name="Config.cs" subtype="Code" buildaction="Compile" />
+    <File name="Windows" subtype="Directory" buildaction="Compile" />
+    <File name="Windows/EnginesWindow.cs" subtype="Code" buildaction="Compile" />
+    <File name="Windows/ExceptionWindow.cs" subtype="Code" buildaction="Compile" />
+    <File name="Windows/PluginsWindow.cs" subtype="Code" buildaction="Compile" />
+    <File name="Windows/WarningWindow.cs" subtype="Code" buildaction="Compile" />
+    <File name="Widgets" subtype="Directory" buildaction="Compile" />
+    <File name="Widgets/StatusBar.cs" subtype="Code" buildaction="Compile" />
+    <File name="../pixmaps/fuse-logo.png" subtype="Code" buildaction="EmbedAsResource" />
+    <File name="../pixmaps/fuse-tray.png" subtype="Code" buildaction="EmbedAsResource" />
+    <File name="Windows/MainWindow.cs" subtype="Code" buildaction="Compile" />
+    <File name="Widgets/MainMenu.cs" subtype="Code" buildaction="Compile" />
+    <File name="Fuse.cs" subtype="Code" buildaction="Compile" />
+    <File name="Widgets/Controls.cs" subtype="Code" buildaction="Compile" />
+  </Contents>
+  <References>
+    <ProjectReference type="Project" localcopy="False" refto="Plugin" />
+    <ProjectReference type="Gac" localcopy="True" refto="gdk-sharp, Version=2.8.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <ProjectReference type="Gac" localcopy="True" refto="System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <ProjectReference type="Gac" localcopy="True" refto="gtk-sharp, Version=2.10.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <ProjectReference type="Project" localcopy="False" refto="Nini" />
+  </References>
+  <Deployment.LinuxDeployData generateScript="False" />
+</Project>

@@ -1,0 +1,145 @@
+<Project name="Plugin.Library" fileversion="2.0" language="C#" clr-version="Net_2_0" ctype="DotNetProject">
+  <Configurations active="Debug">
+    <Configuration name="Debug" ctype="DotNetProjectConfiguration">
+      <Output directory="../build/debug/plugins" assembly="Plugin.Library" />
+      <Build debugmode="True" target="Library" />
+      <Execution runwithwarnings="True" consolepause="True" runtime="MsNet" clr-version="Net_2_0" />
+      <CodeGeneration compiler="Mcs" warninglevel="4" optimize="True" unsafecodeallowed="False" generateoverflowchecks="True" mainclass="" generatexmldocumentation="False" win32Icon="./" ctype="CSharpCompilerParameters" />
+    </Configuration>
+    <Configuration name="Release" ctype="DotNetProjectConfiguration">
+      <Output directory="../build/release/plugins" assembly="Plugin.Library" />
+      <Build debugmode="False" target="Library" />
+      <Execution runwithwarnings="True" consolepause="True" runtime="MsNet" clr-version="Net_2_0" />
+      <CodeGeneration compiler="Mcs" warninglevel="4" optimize="True" unsafecodeallowed="False" generateoverflowchecks="True" mainclass="" generatexmldocumentation="False" win32Icon="./" ctype="CSharpCompilerParameters" />
+    </Configuration>
+  </Configurations>
+  <Contents>
+    <File name="Core.cs" subtype="Code" buildaction="Compile" />
+    <File name="Utils.cs" subtype="Code" buildaction="Compile" />
+    <File name="Loader.cs" subtype="Code" buildaction="Compile" />
+    <File name="Config.cs" subtype="Code" buildaction="Compile" />
+    <File name="Widgets" subtype="Directory" buildaction="Compile" />
+    <File name="Widgets/Library.cs" subtype="Code" buildaction="Compile" />
+    <File name="Widgets/Progress.cs" subtype="Code" buildaction="Compile" />
+    <File name="Widgets/QuickLoad.cs" subtype="Code" buildaction="Compile" />
+    <File name="Widgets/SortColumn.cs" subtype="Code" buildaction="Compile" />
+    <File name="Widgets/TopBar.cs" subtype="Code" buildaction="Compile" />
+    <File name="Folders" subtype="Directory" buildaction="Compile" />
+    <File name="Folders/FolderMonitor.cs" subtype="Code" buildaction="Compile" />
+    <File name="Folders/FolderContextMenu.cs" subtype="Code" buildaction="Compile" />
+    <File name="Folders/FolderStore.cs" subtype="Code" buildaction="Compile" />
+    <File name="Playlists" subtype="Directory" buildaction="Compile" />
+    <File name="Playlists/PlaylistContextMenu.cs" subtype="Code" buildaction="Compile" />
+    <File name="Playlists/PlaylistStore.cs" subtype="Code" buildaction="Compile" />
+    <File name="Media" subtype="Directory" buildaction="Compile" />
+    <File name="Windows" subtype="Directory" buildaction="Compile" />
+    <File name="Windows/AddWindow.cs" subtype="Code" buildaction="Compile" />
+    <File name="Media/MediaPopup.cs" subtype="Code" buildaction="Compile" />
+    <File name="Media/MediaContextMenu.cs" subtype="Code" buildaction="Compile" />
+    <File name="Media/MediaStore.cs" subtype="Code" buildaction="Compile" />
+    <File name="Windows/MediaEdit.cs" subtype="Code" buildaction="Compile" />
+    <File name="../pixmaps/fuse-noart.png" subtype="Code" buildaction="EmbedAsResource" />
+    <File name="AssemblyInfo.cs" subtype="Code" buildaction="Compile" />
+    <File name="DynamicMedia" subtype="Directory" buildaction="Compile" />
+    <File name="DynamicMedia/AudioCD.cs" subtype="Code" buildaction="Compile" />
+    <File name="MediaTypes" subtype="Directory" buildaction="Compile" />
+    <File name="MediaTypes/Media.cs" subtype="Code" buildaction="Compile" />
+    <File name="MediaTypes/FileMedia.cs" subtype="Code" buildaction="Compile" />
+    <File name="MediaTypes/FolderMedia.cs" subtype="Code" buildaction="Compile" />
+    <File name="MediaTypes/PlaylistMedia.cs" subtype="Code" buildaction="Compile" />
+    <File name="MediaTypes/AudioCDMedia.cs" subtype="Code" buildaction="Compile" />
+    <File name="Folders/FolderDataManager.cs" subtype="Code" buildaction="Compile" />
+    <File name="MediaCollections" subtype="Directory" buildaction="Compile" />
+    <File name="MediaCollections/Folder.cs" subtype="Code" buildaction="Compile" />
+    <File name="MediaCollections/Playlist.cs" subtype="Code" buildaction="Compile" />
+    <File name="Global.cs" subtype="Code" buildaction="Compile" />
+    <File name="Media/MediaTree.cs" subtype="Code" buildaction="Compile" />
+    <File name="Folders/FolderTree.cs" subtype="Code" buildaction="Compile" />
+    <File name="Playlists/PlaylistTree.cs" subtype="Code" buildaction="Compile" />
+    <File name="MediaCollections/DynamicMedia.cs" subtype="Code" buildaction="Compile" />
+    <File name="DynamicMedia/DynamicTree.cs" subtype="Code" buildaction="Compile" />
+    <File name="MediaCollections/MediaCollection.cs" subtype="Code" buildaction="Compile" />
+    <File name="Widgets/OrganizerTree.cs" subtype="Code" buildaction="Compile" />
+    <File name="Media/MediaDataManager.cs" subtype="Code" buildaction="Compile" />
+    <File name="Database.cs" subtype="Code" buildaction="Compile" />
+    <File name="Playlists/PlaylistDataManager.cs" subtype="Code" buildaction="Compile" />
+    <File name="DynamicMedia/MusicBrainzRelease.cs" subtype="Code" buildaction="Compile" />
+    <File name="InfoBar" subtype="Directory" buildaction="Compile" />
+    <File name="InfoBar/InfoBar.cs" subtype="Code" buildaction="Compile" />
+    <File name="InfoBar/AudioScrobbler" subtype="Directory" buildaction="Compile" />
+    <File name="Widgets/BorderWidget.cs" subtype="Code" buildaction="Compile" />
+    <File name="InfoBar/LyricWiki" subtype="Directory" buildaction="Compile" />
+    <File name="InfoBar/LyricWiki/Lyrics.cs" subtype="Code" buildaction="Compile" />
+    <File name="InfoBar/LyricWiki/SongLyrics.cs" subtype="Code" buildaction="Compile" />
+    <File name="InfoBar/LyricWiki/SearchArtist.cs" subtype="Code" buildaction="Compile" />
+    <File name="InfoBar/LyricWiki/AlbumBox.cs" subtype="Code" buildaction="Compile" />
+    <File name="InfoBar/LyricWiki/Album.cs" subtype="Code" buildaction="Compile" />
+    <File name="../pixmaps/audioscrobbler-logo.png" subtype="Code" buildaction="EmbedAsResource" />
+    <File name="InfoBar/LyricWiki/LyricsHelp.cs" subtype="Code" buildaction="Compile" />
+    <File name="../pixmaps/lyricwiki-logo.png" subtype="Code" buildaction="EmbedAsResource" />
+    <File name="InfoBar/AudioScrobbler/Profile" subtype="Directory" buildaction="Compile" />
+    <File name="InfoBar/AudioScrobbler/Profile/Profile.cs" subtype="Code" buildaction="Compile" />
+    <File name="InfoBar/AudioScrobbler/Profile/ProfileOptions.cs" subtype="Code" buildaction="Compile" />
+    <File name="InfoBar/AudioScrobbler/Profile/ProfileInfo.cs" subtype="Code" buildaction="Compile" />
+    <File name="InfoBar/QueryInfo.cs" subtype="Code" buildaction="Compile" />
+    <File name="InfoBar/AudioScrobbler/Profile/Friends" subtype="Directory" buildaction="Compile" />
+    <File name="InfoBar/AudioScrobbler/Profile/Friends/Friend.cs" subtype="Code" buildaction="Compile" />
+    <File name="InfoBar/AudioScrobbler/Profile/Friends/Friends.cs" subtype="Code" buildaction="Compile" />
+    <File name="InfoBar/AudioScrobbler/Profile/Friends/FriendBox.cs" subtype="Code" buildaction="Compile" />
+    <File name="InfoBar/AudioScrobbler/Profile/TopArtists" subtype="Directory" buildaction="Compile" />
+    <File name="InfoBar/AudioScrobbler/Profile/TopArtists/TopArtist.cs" subtype="Code" buildaction="Compile" />
+    <File name="InfoBar/AudioScrobbler/Profile/TopArtists/TopArtistBox.cs" subtype="Code" buildaction="Compile" />
+    <File name="InfoBar/AudioScrobbler/Profile/TopArtists/TopArtists.cs" subtype="Code" buildaction="Compile" />
+    <File name="InfoBar/AudioScrobbler/Profile/RecommendedArtists" subtype="Directory" buildaction="Compile" />
+    <File name="InfoBar/AudioScrobbler/Profile/RecommendedArtists/RecommendedArtist.cs" subtype="Code" buildaction="Compile" />
+    <File name="InfoBar/AudioScrobbler/Profile/RecommendedArtists/RecommendedArtists.cs" subtype="Code" buildaction="Compile" />
+    <File name="InfoBar/AudioScrobbler/Profile/Scrobbler.cs" subtype="Code" buildaction="Compile" />
+    <File name="../pixmaps/lastfm-logo.png" subtype="Code" buildaction="EmbedAsResource" />
+    <File name="InfoBar/InfoPanel.cs" subtype="Code" buildaction="Compile" />
+    <File name="InfoBar/AudioScrobbler/ArtistInfo" subtype="Directory" buildaction="Compile" />
+    <File name="InfoBar/AudioScrobbler/ArtistInfo/AlbumDetails/AlbumDetails.cs" subtype="Code" buildaction="Compile" />
+    <File name="InfoBar/AudioScrobbler/ArtistInfo/AlbumDetails/TrackInfo.cs" subtype="Code" buildaction="Compile" />
+    <File name="InfoBar/AudioScrobbler/ArtistInfo/SimilarArtists/SimilarArtist.cs" subtype="Code" buildaction="Compile" />
+    <File name="InfoBar/AudioScrobbler/ArtistInfo/SimilarArtists/SimilarArtistBox.cs" subtype="Code" buildaction="Compile" />
+    <File name="InfoBar/AudioScrobbler/ArtistInfo/SimilarArtists/SimilarArtists.cs" subtype="Code" buildaction="Compile" />
+    <File name="InfoBar/AudioScrobbler/ArtistInfo/SimilarTracks/SimilarTrack.cs" subtype="Code" buildaction="Compile" />
+    <File name="InfoBar/AudioScrobbler/ArtistInfo/SimilarTracks/SimilarTrackBox.cs" subtype="Code" buildaction="Compile" />
+    <File name="InfoBar/AudioScrobbler/ArtistInfo/SimilarTracks/SimilarTracks.cs" subtype="Code" buildaction="Compile" />
+    <File name="InfoBar/AudioScrobbler/ArtistInfo/TopAlbums/TopAlbum.cs" subtype="Code" buildaction="Compile" />
+    <File name="InfoBar/AudioScrobbler/ArtistInfo/TopAlbums/TopAlbumBox.cs" subtype="Code" buildaction="Compile" />
+    <File name="InfoBar/AudioScrobbler/ArtistInfo/TopAlbums/TopAlbums.cs" subtype="Code" buildaction="Compile" />
+    <File name="InfoBar/AudioScrobbler/ArtistInfo/TopTracks/TopTrack.cs" subtype="Code" buildaction="Compile" />
+    <File name="InfoBar/AudioScrobbler/ArtistInfo/TopTracks/TopTracks.cs" subtype="Code" buildaction="Compile" />
+    <File name="InfoBar/AudioScrobbler/ArtistInfo/ArtistBox.cs" subtype="Code" buildaction="Compile" />
+    <File name="InfoBar/AudioScrobbler/ArtistInfo/ArtistInfo.cs" subtype="Code" buildaction="Compile" />
+    <File name="InfoBar/AudioScrobbler/ArtistInfo/ArtistInfoHelp.cs" subtype="Code" buildaction="Compile" />
+    <File name="InfoBar/WebService.cs" subtype="Code" buildaction="Compile" />
+    <File name="InfoBar/Content.cs" subtype="Code" buildaction="Compile" />
+    <File name="InfoBar/Widgets" subtype="Directory" buildaction="Compile" />
+    <File name="InfoBar/Widgets/ContentButton.cs" subtype="Code" buildaction="Compile" />
+    <File name="InfoBar/Widgets/ContentButtonBox.cs" subtype="Code" buildaction="Compile" />
+    <File name="InfoBar/Widgets/ContentTabs.cs" subtype="Code" buildaction="Compile" />
+    <File name="InfoBar/Widgets/ImageBox.cs" subtype="Code" buildaction="Compile" />
+    <File name="InfoBar/Widgets/InfoButton.cs" subtype="Code" buildaction="Compile" />
+    <File name="InfoBar/Widgets/LinkLabel.cs" subtype="Code" buildaction="Compile" />
+    <File name="InfoBar/Widgets/PageNavigator.cs" subtype="Code" buildaction="Compile" />
+    <File name="InfoBar/Widgets/SearchBox.cs" subtype="Code" buildaction="Compile" />
+    <File name="InfoBar/AudioScrobbler/Profile/ScrobblerQueue.cs" subtype="Code" buildaction="Compile" />
+    <File name="Makefile.am" subtype="Code" buildaction="Nothing" />
+  </Contents>
+  <References>
+    <ProjectReference type="Gac" localcopy="True" refto="gtk-sharp, Version=2.8.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <ProjectReference type="Project" localcopy="False" refto="Plugin" />
+    <ProjectReference type="Gac" localcopy="True" refto="System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <ProjectReference type="Gac" localcopy="True" refto="System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <ProjectReference type="Gac" localcopy="True" refto="Mono.Data.SqliteClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756" />
+    <ProjectReference type="Gac" localcopy="True" refto="glib-sharp, Version=2.10.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <ProjectReference type="Project" localcopy="False" refto="Nini" />
+    <ProjectReference type="Gac" localcopy="True" refto="gdk-sharp, Version=2.10.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <ProjectReference type="Gac" localcopy="True" refto="System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <ProjectReference type="Gac" localcopy="True" refto="pango-sharp, Version=2.10.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <ProjectReference type="Gac" localcopy="True" refto="System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <ProjectReference type="Gac" localcopy="True" refto="taglib-sharp, Version=2.0.3.0, Culture=neutral, PublicKeyToken=db62eba44689b5b0" />
+  </References>
+  <Deployment.LinuxDeployData generatePcFile="False" />
+</Project>

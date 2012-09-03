@@ -1,0 +1,50 @@
+<Project name="Nini" fileversion="2.0" language="C#" clr-version="Net_1_1" ctype="DotNetProject">
+  <Configurations active="Debug">
+    <Configuration name="Debug" ctype="DotNetProjectConfiguration">
+      <Output directory="../build/debug" assembly="Nini" />
+      <Build debugmode="True" target="Library" />
+      <Execution runwithwarnings="True" consolepause="False" runtime="MsNet" clr-version="Net_1_1" />
+      <CodeGeneration compiler="Mcs" warninglevel="4" optimize="True" unsafecodeallowed="False" generateoverflowchecks="True" generatexmldocumentation="False" ctype="CSharpCompilerParameters" />
+    </Configuration>
+    <Configuration name="Release" ctype="DotNetProjectConfiguration">
+      <Output directory="../build/debug" assembly="Nini" />
+      <Build debugmode="False" target="Library" />
+      <Execution runwithwarnings="True" consolepause="False" runtime="MsNet" clr-version="Net_1_1" />
+      <CodeGeneration compiler="Mcs" warninglevel="4" optimize="True" unsafecodeallowed="False" generateoverflowchecks="True" generatexmldocumentation="False" ctype="CSharpCompilerParameters" />
+    </Configuration>
+  </Configurations>
+  <Contents>
+    <File name="AssemblyInfo.cs" subtype="Code" buildaction="Compile" />
+    <File name="Config" subtype="Directory" buildaction="Compile" />
+    <File name="Ini" subtype="Directory" buildaction="Compile" />
+    <File name="Util" subtype="Directory" buildaction="Compile" />
+    <File name="Config/AliasText.cs" subtype="Code" buildaction="Compile" />
+    <File name="Config/ArgvConfigSource.cs" subtype="Code" buildaction="Compile" />
+    <File name="Config/ConfigBase.cs" subtype="Code" buildaction="Compile" />
+    <File name="Config/ConfigCollection.cs" subtype="Code" buildaction="Compile" />
+    <File name="Config/ConfigSourceBase.cs" subtype="Code" buildaction="Compile" />
+    <File name="Config/DotNetConfigSource.cs" subtype="Code" buildaction="Compile" />
+    <File name="Config/IConfig.cs" subtype="Code" buildaction="Compile" />
+    <File name="Config/IConfigSource.cs" subtype="Code" buildaction="Compile" />
+    <File name="Config/IniConfig.cs" subtype="Code" buildaction="Compile" />
+    <File name="Config/IniConfigSource.cs" subtype="Code" buildaction="Compile" />
+    <File name="Config/RegistryConfigSource.cs" subtype="Code" buildaction="Compile" />
+    <File name="Config/XmlConfigSource.cs" subtype="Code" buildaction="Compile" />
+    <File name="Ini/IniDocument.cs" subtype="Code" buildaction="Compile" />
+    <File name="Ini/IniException.cs" subtype="Code" buildaction="Compile" />
+    <File name="Ini/IniItem.cs" subtype="Code" buildaction="Compile" />
+    <File name="Ini/IniReader.cs" subtype="Code" buildaction="Compile" />
+    <File name="Ini/IniSection.cs" subtype="Code" buildaction="Compile" />
+    <File name="Ini/IniSectionCollection.cs" subtype="Code" buildaction="Compile" />
+    <File name="Ini/IniWriter.cs" subtype="Code" buildaction="Compile" />
+    <File name="Util/ArgvParser.cs" subtype="Code" buildaction="Compile" />
+    <File name="Util/OrderedList.cs" subtype="Code" buildaction="Compile" />
+    <File name="Util/OrderedListEnumerator.cs" subtype="Code" buildaction="Compile" />
+    <File name="Makefile.am" subtype="Code" buildaction="Nothing" />
+  </Contents>
+  <References>
+    <ProjectReference type="Gac" localcopy="True" refto="System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <ProjectReference type="Gac" localcopy="True" refto="System.Xml, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  </References>
+  <Deployment.LinuxDeployData generatePcFile="False" />
+</Project>

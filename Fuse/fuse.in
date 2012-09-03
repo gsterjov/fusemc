@@ -1,0 +1,3 @@
+#!/bin/sh
+
+LD_LIBRARY_PATH="@prefix@/lib/@PACKAGE@":$LD_LIBRARY_PATH exec mono "@prefix@/lib/@PACKAGE@/Fuse.exe" --data-dir="@FUSE_DIR@"

@@ -1,0 +1,57 @@
+<Combine name="Fuse" fileversion="2.0" outputpath="build/release/" releaseversion="0.2" defaultDeployTarget="Dissent" MakePkgConfig="False" MakeLibPC="False">
+  <Configurations active="Debug">
+    <Configuration name="Debug" ctype="CombineConfiguration">
+      <Entry build="True" name="Fuse" configuration="Debug" />
+      <Entry build="True" name="Plugin.Library" configuration="Debug" />
+      <Entry build="True" name="Plugin" configuration="Debug" />
+      <Entry build="True" name="Plugin.News" configuration="Debug" />
+      <Entry build="True" name="RssReader" configuration="Debug" />
+      <Entry build="True" name="MediaEngine.GStreamer" configuration="Debug" />
+      <Entry build="True" name="Plugin.Theatre" configuration="Debug" />
+      <Entry build="True" name="Nini" configuration="Debug" />
+      <Entry build="True" name="Plugin.TrayIcon" configuration="Debug" />
+      <Entry build="True" name="GStreamerPlaybin" configuration="Debug" />
+    </Configuration>
+    <Configuration name="Release" ctype="CombineConfiguration">
+      <Entry build="True" name="Fuse" configuration="Release" />
+      <Entry build="True" name="Plugin.Library" configuration="Release" />
+      <Entry build="True" name="Plugin" configuration="Release" />
+      <Entry build="True" name="Plugin.News" configuration="Release" />
+      <Entry build="True" name="RssReader" configuration="Release" />
+      <Entry build="True" name="MediaEngine.GStreamer" configuration="Release" />
+      <Entry build="True" name="Plugin.Theatre" configuration="Release" />
+      <Entry build="True" name="Nini" configuration="Release" />
+      <Entry build="True" name="Plugin.TrayIcon" configuration="Release" />
+      <Entry build="True" name="GStreamerPlaybin" configuration="Release" />
+      <CustomCommands>
+        <Command type="Build" command="./make_before_run.sh" />
+        <Command type="Clean" command="./make_clean.sh" />
+        <Command type="Execute" command="./make_run.sh" />
+      </CustomCommands>
+    </Configuration>
+  </Configurations>
+  <StartMode startupentry="Fuse" single="True">
+    <Execute type="None" entry="Fuse" />
+    <Execute type="None" entry="Plugin.Library" />
+    <Execute type="None" entry="Plugin" />
+    <Execute type="None" entry="Plugin.News" />
+    <Execute type="None" entry="RssReader" />
+    <Execute type="None" entry="MediaEngine.GStreamer" />
+    <Execute type="None" entry="Plugin.Theatre" />
+    <Execute type="None" entry="Nini" />
+    <Execute type="None" entry="Plugin.TrayIcon" />
+    <Execute type="None" entry="GStreamerPlaybin" />
+  </StartMode>
+  <Entries>
+    <Entry filename="Fuse/Fuse.mdp" />
+    <Entry filename="Plugin.Library/Plugin.Library.mdp" />
+    <Entry filename="Plugin/Plugin.mdp" />
+    <Entry filename="Plugin.News/Plugin.News.mdp" />
+    <Entry filename="RssReader/RssReader.mdp" />
+    <Entry filename="MediaEngine.GStreamer/MediaEngine.GStreamer.mdp" />
+    <Entry filename="Plugin.Theatre/Plugin.Theatre.mdp" />
+    <Entry filename="Nini/Nini.mdp" />
+    <Entry filename="Plugin.TrayIcon/Plugin.TrayIcon.mdp" />
+    <Entry filename="GStreamerPlaybin/GStreamerPlaybinWrapper.mds" />
+  </Entries>
+</Combine>

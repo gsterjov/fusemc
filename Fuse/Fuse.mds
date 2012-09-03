@@ -1,0 +1,16 @@
+<Combine name="Fuse" fileversion="2.0">
+  <Configurations active="Debug">
+    <Configuration name="Debug" ctype="CombineConfiguration">
+      <Entry build="True" name="Fuse" configuration="Debug" />
+    </Configuration>
+    <Configuration name="Release" ctype="CombineConfiguration">
+      <Entry build="True" name="Fuse" configuration="Release" />
+    </Configuration>
+  </Configurations>
+  <StartMode startupentry="Fuse" single="True">
+    <Execute type="None" entry="Fuse" />
+  </StartMode>
+  <Entries>
+    <Entry filename="Fuse.mdp" />
+  </Entries>
+</Combine>

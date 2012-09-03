@@ -1,0 +1,8 @@
+
+pkglib_SCRIPTS = $(ASSEMBLY)
+
+pluginfilesdir = @prefix@/lib/@PACKAGE@/plugins
+pluginfiles_DATA = $(PLUGIN)
+
+programfilesdir = @prefix@/lib/@PACKAGE@
+programfiles_DATA = $(PROGRAM_FILES)
